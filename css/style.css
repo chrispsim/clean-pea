@@ -1,0 +1,307 @@
+/*----- Reset Webpage -----*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; }
+
+.btn, .btn:link, .btn:visited {
+  padding: 15px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  font-size: 100%; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn--light {
+  background-color: #21aba5;
+  color: #fff; }
+  .btn--light::after {
+    background-color: #21aba5; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.typed {
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+  color: #fff; }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.section-feature {
+  background: #F4F4F4;
+  height: 800px;
+  margin-top: 290px; }
+
+.featuretitle {
+  text-transform: uppercase;
+  color: #45eba5;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  text-align: center;
+  height: 150px; }
+
+.featuretitle h1::after {
+  display: block;
+  height: 2px;
+  background-color: #21aba5;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.featurebox {
+  line-height: 25px;
+  padding: 30px;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #11998e, #38ef7d);
+  height: 350px;
+  width: 300px;
+  margin-left: 10%;
+  border-radius: 3px;
+  opacity: .8;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transition: all .2s; }
+
+.featurebox h3 {
+  line-height: 35px; }
+
+.featurebox:hover {
+  transform: scale(1.1);
+  /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
+
+ion-icon {
+  color: lightgreen;
+  font-size: 60px;
+  padding-top: 20px; }
+
+.footer {
+  background-color: #333;
+  padding: 80px;
+  margin-top: 0rem; }
+
+.footer-nav {
+  float: left; }
+  .footer-nav li {
+    display: inline-block;
+    margin-left: 20px; }
+  .footer-nav a {
+    text-decoration: none;
+    color: #fff; }
+    .footer-nav a:hover, .footer-nav a:active {
+      color: #21aba5; }
+
+.social-links {
+  float: right; }
+  .social-links li {
+    display: inline-block;
+    margin-left: 20px; }
+
+.footer-text {
+  text-align: center;
+  font-size: 90%;
+  padding: 20px;
+  line-height: 30px;
+  color: #45eba5; }
+
+.social-links li a:link,
+.social-links li a:visited {
+  color: #fff;
+  font-size: 160%; }
+
+.icon {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s; }
+
+.ion-logo-facebook:hover {
+  color: #3b5998; }
+
+.ion-logo-twitter:hover {
+  color: #00aced; }
+
+.ion-logo-googleplus:hover {
+  color: #d34836; }
+
+.ion-logo-instagram:hover {
+  color: #517fa4; }
+
+.section-contactform {
+  background-color: #F4F4F4;
+  margin-top: 740px;
+  height: 500px; }
+
+.contacttitle {
+  color: #45eba5;
+  margin-top: 10px;
+  padding: 50px;
+  text-align: center; }
+
+.contactlabel {
+  color: #21aba5;
+  margin-top: 35px;
+  margin-left: 250px;
+  opacity: .8;
+  font-size: 20px; }
+
+.contactbox {
+  margin-top: 20px;
+  margin-left: -25px; }
+
+input[type=text] {
+  width: 450px;
+  height: 40px; }
+
+.contactbox textarea {
+  width: 450px;
+  height: 100px;
+  border-radius: 3px; }
+
+.header {
+  padding: 50px; }
+  .header__bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -2; }
+    .header__bg-video--overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1; }
+    .header__bg-video--content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .header__logo {
+    height: 60px;
+    width: auto;
+    float: left; }
+  .header__list {
+    margin-top: 10px;
+    float: right;
+    list-style: none; }
+  .header__item {
+    display: inline-block;
+    margin-left: 20px; }
+  .header__link:link, .header__link:visited {
+    padding: 8px 0;
+    color: #45eba5;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom .2s;
+    transition: border-bottom .2s; }
+  .header__link:hover, .header__link:active {
+    border-bottom: 2px solid #21aba5; }
+  .header__text {
+    margin-top: 220px;
+    text-align: center; }
+  .header__btn {
+    margin-top: 50px; }
+
+.section-recycle-services-details h2 {
+  font-size: 50px; }
+
+.section-recycle-services-details span {
+  margin-top: 30px;
+  display: block;
+  width: 20%;
+  /*or whatever width you want the effect of <hr>*/
+  border-top: 2px solid #21aba5; }
+
+.section-recycle-services-details h3 {
+  padding-top: 30px; }
+
+.section-recycle-services-details ul {
+  padding-top: 20px; }
+
+.section-recycle-services-details li {
+  list-style: none;
+  line-height: 30px; }
+
+.map {
+  height: 700px;
+  width: 100%; }
+
+.section-food-services-details {
+  padding-top: 40px; }
+  .section-food-services-details h2 {
+    font-size: 50px; }
+  .section-food-services-details span {
+    margin-top: 30px;
+    display: block;
+    width: 20%;
+    /*or whatever width you want the effect of <hr>*/
+    border-top: 2px solid #21aba5; }
+  .section-food-services-details h3 {
+    padding-top: 30px; }
+  .section-food-services-details ul {
+    padding-top: 20px; }
+  .section-food-services-details li {
+    list-style: none;
+    line-height: 30px; }

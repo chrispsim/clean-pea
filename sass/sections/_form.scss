@@ -1,0 +1,39 @@
+.section-contactform {
+  background-color: #F4F4F4;
+  margin-top: 740px;
+  height: 500px;
+}
+
+.contacttitle{
+    color: $color-primary;
+    margin-top: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.contactlabel{
+    color: $color-secondary;
+    margin-top: 35px;
+    margin-left: 250px;
+    opacity: .8;
+    font-size: 20px;
+}
+
+.contactbox{
+    margin-top: 20px;
+    margin-left: -25px;
+
+}
+
+input[type=text]{
+    width: 450px;
+    height: 40px;
+
+}
+
+.contactbox textarea{
+    width: 450px;
+    height:100px;
+    border-radius: 3px;
+}

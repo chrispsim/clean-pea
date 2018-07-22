@@ -1,0 +1,14 @@
+{
+  "name": "cleanpea",
+  "version": "1.0.0",
+  "description": "environmental project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass --watch sass/main.scss css/style.css"
+  },
+  "author": "Christopher Sim & DNarial Brown",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}

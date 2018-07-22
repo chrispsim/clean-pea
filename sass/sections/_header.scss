@@ -1,0 +1,76 @@
+.header {
+  padding: 50px;
+
+  &__bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -2;
+
+    &--overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba($color-black, .7);
+      z-index: 1;
+    }
+
+    &--content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  &__logo {
+    height: 60px;
+    width: auto;
+    float: left;
+  }
+
+  &__list {
+    margin-top: 10px;
+    float: right;
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      padding: 8px 0;
+      color: $color-primary;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 90%;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: border-bottom .2s;
+      transition: border-bottom .2s;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 2px solid $color-secondary;
+    }
+  }
+
+  &__text {
+    margin-top: 220px;
+    text-align: center;
+  }
+
+  &__btn {
+    margin-top: 50px;
+  }
+
+}

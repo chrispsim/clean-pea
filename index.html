@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Environmental Product">
+    <meta name="author" content="Christopher Sim & D'Narial Brown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbGcyZXck5rEe4OO9gbMQRpPZCumMwdWc&callback=initMap"></script>
+    <title>Clean Pea | Home</title>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="header__bg-video">
+            <div class="header__bg-video--overlay"></div>
+            <video class="header__bg-video--content" autoplay muted loop>
+                <source src="img/video.mp4" type="video/mp4">
+                <source src="img/video.webm" type="video/webm">
+                Your browser is not supported!
+            </video>
+        </div>
+
+        <nav>
+            <div class="row">
+                <a href="#"><img src="img/logo_light.svg" alt="logo_light" class="header__logo"></a>
+                <ul class="header__list">
+                    <li class="header__item"><a href="#features" class="header__link">How it works</a></li>
+                    <li class="header__item"><a href="#services" class="header__link">Our Services</a></li>
+                    <li class="header__item"><a href="#form" class="header__link">Join Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header__text">
+            <div class="row">
+                <div id="typed" class="typed"></div>
+                <br>
+                <a href="#features" class="btn btn--light header__btn">Discover More</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Features -->
+    <section class="section-feature" id="features">
+        <div class="row featuretitle">
+            <h1>How Clean Pea Works</h1>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3 featurebox">
+                <ion-icon name="checkbox-outline"></ion-icon>
+                <h3>Step 1</h3>
+                <p>Choose how you would like to help Mother Earth today, from better recycling to reducing food waste.</p>
+            </div>
+            <div class="col span-1-of-3 featurebox">
+                <ion-icon name="map"></ion-icon>
+                <h3>Step 2</h3>
+                <p>
+                  Our geolocation service will automatically retrieve your location so you could choose a location from the list closest to your vacinity.
+                </p>
+            </div>
+            <div class="col span-1-of-3 featurebox">
+                <ion-icon name="happy"></ion-icon>
+                <h3>Step 3</h3>
+                <p>Details about the location and the amount of good you are contributing will be displayed to you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Services -->
+    <section class="section-recycle-services" id="services">
+        <div class="col span-1-of-2">
+            <div id="map" class="map"></div>
+        </div>
+        <div class="col span-1-of-2 section-recycle-services-details">
+            <h2>Recycle</h2>
+            <span></span>
+            <h3>Provide recycling a new home</h3>
+            <ul>
+                <li>Recycling are ending up in landfills</li>
+                <li>Ensure your recycling goes to a better home</li>
+                <li>Do your duty for Mother Earth</li>
+            </ul>
+            <select id="end-1">
+                <option value="45.600929, -122.754510">Plastic Lizards</option>
+                <option value="47.550643, -122.336279">Strategic Materials</option>
+                <option value="47.516761, -122.322403">Food Life Line</option>
+                <option value="47.665423, -122.317631">University District Food Bank</option>
+            </select>
+
+            <div class="section-food-services-details">
+                <h2>Food Waste</h2>
+                <span></span>
+                <h3>Help reduce food waste</h3>
+                <ul>
+                    <li>Humans waste 30 million tons of food per year</li>
+                    <li>Wasting food is also a detriment to nature, causes pollution</li>
+                    <li>Your leftover food could help the less fortunate</li>
+                </ul>
+                <select id="end-2">
+                    <option value="47.516761, -122.322403">Food Life Line</option>
+                    <option value="47.665423, -122.317631">University District Food Bank</option>
+                </select>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section-contactform" id="form">
+        <div class="row contacttitle">
+            <h2>Help Your Community By Joining Ours</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <div class="contactlabel">
+                    Full name
+                </div>
+                <div class="contactlabel">
+                    Email address
+                </div>
+                <div class="contactlabel">
+                    Drop us a line
+                </div>
+            </div>
+            <div class="col span-1-of-2">
+                <form>
+                    <div class="contactbox">
+                        <input type="text" name="email address" placeholder="Example@gmail.com">
+                    </div>
+
+                    <div class="contactbox">
+                        <input type="text" name="name" placeholder="Your Name">
+                    </div>
+
+                    <div class="contactbox">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <div class="contactbox">
+                        <input type="button"  value="Submit" class="btn btn--light">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#features">How it works</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#form">Join Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon ion-logo-googleplus"></i></a></li>
+                    <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="footer-text">
+                &copy; 2018 Clean Pea. All Rights Reserved.
+                <br>
+                Made with &hearts; by Christopher Sim & D'Narial Brown.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/typed.min.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+</body>
+<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+</html>

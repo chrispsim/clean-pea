@@ -1,0 +1,70 @@
+.footer {
+  background-color: $color-grey-dark-3;
+  padding: 80px;
+  margin-top: 0rem;
+}
+
+.footer-nav {
+  float: left;
+
+  & li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $color-white;
+
+    &:hover,
+    &:active {
+      color: $color-secondary;
+    }
+  }
+}
+
+
+.social-links {
+  float: right;
+
+  & li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 90%;
+  padding: 20px;
+  line-height: 30px;
+  color: $color-primary;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  color: $color-white;
+  font-size: 160%;
+}
+
+.icon {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover {
+  color: #3b5998;
+}
+
+.ion-logo-twitter:hover {
+  color: #00aced;
+}
+
+.ion-logo-googleplus:hover {
+  color: #d34836;
+}
+
+.ion-logo-instagram:hover {
+  color: #517fa4;
+}
